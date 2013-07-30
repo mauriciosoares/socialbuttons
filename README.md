@@ -3,7 +3,7 @@
 A nice way to implement a Social Network button in your website using Web Components
 
 ##Usage:
-	
+
 	<socialbuttons></socialbuttons>
 
 ##Parameters:
