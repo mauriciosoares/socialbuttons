@@ -13,3 +13,5 @@ Facebook URL: `fburl="https://github.com/msodeveloper/socialbuttons"`
 Twitter URL: `turl="https://github.com/msodeveloper/socialbuttons"`
 
 Twitter Via: `tvia="Github"`
+
+Twitter Text: `ttext="Web Components Rock!"`

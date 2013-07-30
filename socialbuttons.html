@@ -2,11 +2,13 @@
 	attributes="
 		fburl 
 		turl 
-		tvia">
+		tvia 
+		ttext
+		">
 	<template>
 		<iframe src="//www.facebook.com/plugins/like.php?href={{fburl}}&send=false&layout=button_count&width=200&show_faces=false&font&colorscheme=light&action=like&height=50&appId=624330790925451" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-		<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url={{turl}}{{tvia}}&text=socialbuttons rock!"></iframe>
+		<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url={{turl}}{{tvia}}{{ttext}}"></iframe>
 	</template>
 
 	<script>
@@ -22,8 +24,14 @@
 
 			if(this.tvia) {
 				this.tvia = '&via=' + this.tvia;
-			}else{
+			} else {
 				this.tvia = '';
+			}
+
+			if(this.ttext) {
+				this.ttext = '&text=' + this.ttext;
+			} else {
+				this.ttext = '';
 			}
 		}
 	});
